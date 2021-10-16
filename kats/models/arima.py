@@ -104,7 +104,7 @@ class ARIMAModel(m.Model):
         """Fit ARIMA model with given parameters
 
         For more details on each parameter please refer to the following doc:
-        https://www.statsmodels.org/stable/generated/statsmodels.tsa.arima_model.ARIMA.fit.html#statsmodels.tsa.arima.model.ARIMA.fit
+        https://www.statsmodels.org/stable/generated/statsmodels.tsa.arima.model.ARIMA.fit.html#statsmodels.tsa.arima_model.ARIMA.fit
 
         Args:
             start_params: Optional; An array_like object for the initial guess of the solution for the loglikelihood maximization
