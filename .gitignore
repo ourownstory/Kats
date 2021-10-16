@@ -1,3 +1,9 @@
+# custom
+.idea
+tutorials/*.csv
+.gitignore
+
+
 # System files
 .DS_Store
 .Spotlight-V100
