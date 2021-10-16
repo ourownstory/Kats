@@ -543,7 +543,7 @@ class BackTesterExpandingWindow(BackTesterParent):
       >>> backtester = BackTesterExpandingWindow(
             error_methods=all_errors,
             data=ts,
-            params=paramsparams,
+            params=params,
             start_train_percentage=50,
             end_train_percentage=75,
             test_percentage=25,
@@ -711,7 +711,7 @@ class BackTesterRollingWindow(BackTesterParent):
       >>> backtester = BackTesterExpandingWindow(
             error_methods=all_errors,
             data=ts,
-            params=paramsparams,
+            params=params,
             train_percentage=50,
             test_percentage=25,
             expanding_steps=3,
@@ -840,7 +840,7 @@ class BackTesterFixedWindow(BackTesterParent):
       >>> backtester = BackTesterFixedWindow(
             error_methods=all_errors,
             data=ts,
-            params=paramsparams,
+            params=params,
             train_percentage=50,
             test_percentage=25,
             window_percentage=25,
@@ -967,14 +967,14 @@ class CrossValidation:
       >>> cv = CrossValidation(
             error_methods=all_errors,
             data=ts,
-            params=paramsparams,
+            params=params,
             train_percentage=50,
             test_percentage=25,
             num_folds=3,
             model_class=ARIMAModel,
             rolling_window=True
           )
-      >>> backtester.run_backtest()
+      >>> cv.run_cv()
       >>> mape = cv.get_error_value("mape") # Retrieve MAPE error
     """
 
